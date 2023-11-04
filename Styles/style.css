@@ -1,0 +1,408 @@
+/* rubik-mono-one-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik Mono One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-mono-one-v18-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/josefin-sans-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-sans-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/josefin-sans-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*montserrat для русского текста*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts//Montserrat-SemiBold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fira-code-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fira-code-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fira-code-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/fira-code-v22-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* sedgwick-ave-display-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sedgwick Ave Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/sedgwick-ave-display-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a { 
+    text-decoration: none;
+} 
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-image: url("../Images/main_bg.png");
+    background-size: 100%;
+}
+header{
+    display: block;
+    top: 0;
+    background-color:#3E3E3E;
+    padding: 15px 15px 15px 25px ;
+}
+.header_div{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.logo_btn{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    width: auto;
+}
+.logo_logo{
+    width: 96px;
+    height: 87px;
+    flex-shrink: 0;
+}
+.logo_text{
+    color: #FFF;
+    font-family: Sedgwick Ave Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+
+    display: flex;
+    width: 479.378px;
+    height: 87.521px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.links_header{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.motivation_header{
+    padding-top: 15px;
+
+    font-family: Fira Code;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    background: url("../Images/gold_png.png"), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.strips_header{
+    width: 40px;
+    height: 30px;
+    margin-top: 26px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 4px;
+    line-height: 42px;
+}
+
+section.section-first{
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: url("../Images/Master_image.png");
+    background-size: 100%;
+}
+.q_text{
+    color: #B79484;
+    padding-bottom: 25px;
+    font-size: 30px;
+    text-align: right;
+}
+.w_text{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 66px;
+    padding-bottom: 25px;
+    text-align: right;
+}
+.e_text{
+    color: gray;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    line-height:162%;
+    padding-bottom: 25px;
+    text-align: right;
+}
+.btn_text{
+    margin-top: 45px;
+    color: gray;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.donat{
+    width: 680px;
+}
+.on_line_strip{
+    background-color: black;
+    height: 50px;
+}
+.First_text_line{
+    padding-left: 250px;
+
+    font-family: Fira Code;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    background: url("../Images/gold_png.png"), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog_section{
+    display: flex;
+    padding: 50px 50px 50px 50px;
+}
+
+.first_text_section{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: right;
+    width: 513px;
+    height: 543px;
+    padding-right: 50px;
+    margin-top: 10%;
+    flex-shrink: 0;
+
+    background: url("../Images/gold_png.png"), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.first_text_image{
+    width: 590px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 33px;
+}
+
+.cans_text_image{
+    width: 600px;
+    height: auto;
+    margin-left: -50px;
+    flex-shrink: 0;
+}
+.second_text_section{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    width: 513px;
+    height: 543px;
+    margin-top: 10%;
+    flex-shrink: 0;
+    background: url("../Images/gold_png.png"), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tri_text_section{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    width: 513px;
+    height: 543px;
+    flex-shrink: 0;
+
+    background: url("../Images/gold_png.png"), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.veshalka_theater{
+    width: 737px;
+    height: 571px;
+    flex-shrink: 0;
+}
+
+.Second_text_line{
+    padding-left: 50px;
+
+    font-family: Fira Code;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    background: url("../Images/gold_png.png"), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.donut_img{
+    display: none;
+    width: 704.907px;
+    height: 529.3px;
+    transform: rotate(19.418deg);
+    flex-shrink: 0;
+}
+
+.carusel-section{
+    height: 700px;
+}
+.gallery {
+    padding-top: 60px;
+}
+.gallery-cell {
+    width:29%;
+    margin-right: 20px;
+}
+.gallery-cell:before {
+    display: none;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+.gallery_img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    height: 315px;
+    background-color: #3E3E3E;
+    flex-shrink: 0;
+}
+.links{
+    margin: 50px 50px 50px 50px ;
+    width: 477px;
+    height: 157.955px;
+    flex-shrink: 0;
+}
+.inst-link{
+    width: 477px;
+    height: 79.365px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+.inst-link-img{
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+}
+.inst-link-txt{
+    color: #FFF;
+    font-family: Fira Code;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.tg-link{
+    width: 304px;
+    height: 67.955px;
+    flex-shrink: 0;
+}
+.tg-link-img{
+    width: 69px;
+    height: 67.955px;
+    border-radius: 14px;
+    flex-shrink: 0;
+}
+.tg-link-txt{
+    color: #FFF;
+
+    font-family: Fira Code;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
